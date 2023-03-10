@@ -20,5 +20,13 @@ public class Exercise5 {
     // Use System.out.println to enter next line
     // Use System.out.print to print output, without entering to next line
 
+    for (int x = 0; x < 5; x++) { 
+      for (int y = x; y >= 0; y--) {
+     System.out.print("*"); 
+      }
+      System.out.println(" ");
+     }
+
+
   }
 } 
