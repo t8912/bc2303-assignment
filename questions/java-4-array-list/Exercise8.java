@@ -26,15 +26,12 @@ public class Exercise8 {
     // Write a loop to find the index to insert new value
     // the array size is fixed, what happen to the last element of the array?
 
-    ///int numberToFind = 3;
-    ///for (int i = 0; i < my_array.length; i++) {
-     /// if (my_array[i] == numberToFind) {
-      ///  System.out.printf()
-     /// }
-   /// }
+    for (int i = my_array.length - 2; i > Index_position; i--) {
+      my_array[i+1] = my_array[i];
 
-   for ()
+      my_array[Index_position] = newValue;
 
     System.out.println("New Array: " + Arrays.toString(my_array));
   }
+}
 }
