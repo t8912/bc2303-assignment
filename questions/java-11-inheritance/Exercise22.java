@@ -1,0 +1,49 @@
+/**
+ * Expected Output:
+ * FIRST
+ * SECOND
+ * FIRST
+ * ANOTHER METHOD
+ */
+abstract class A {
+    abstract void firstMethod();
+
+    void secondMethod() {
+        System.out.println("SECOND");
+
+        firstMethod();
+    }
+
+    abstract void thirdMethod();
+}
+
+abstract class B extends A {
+    @Override
+    void firstMethod() {
+        System.out.println("FIRST");
+
+    }
+}
+
+// Implement Class C to generate expected output
+class C extends B {
+    @Override
+    void thirdMethod() {
+        System.out.println("ANOTHER METHOD");
+    }
+
+}
+
+class Exercise22 {
+    public static void main(String[] args) {
+
+        System.out.println("Expected Output:");
+
+        C c = new C();
+        c.firstMethod();
+        c.secondMethod();
+        // c.anotherMethod();
+        c.thirdMethod();
+
+    }
+}

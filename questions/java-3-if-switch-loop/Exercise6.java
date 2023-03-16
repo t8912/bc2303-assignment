@@ -36,10 +36,29 @@ public class Exercise6 {
     // Upper Part: increasing parttern
     // Think about how to print " " and "*"
     // and when to new line
+    for (i = 0; i < r; i++) {
+      for (j = 0; j < r-i-1; j++) {
+          System.out.print(" ");
+      }
+      for (j = 0; j < 2*i+1; j++) {
+          System.out.print("*");
+      }
+      System.out.println();
+  }
 
     // Lower Part: decreasing parttern
     // Think about how to print " " and "*"
     // and when to new line
+
+    for (i = r-2; i >= 0; i--) {
+      for (j = 0; j < r-i-1; j++) {
+          System.out.print(" ");
+      }
+      for (j = 0; j < 2*i+1; j++) {
+          System.out.print("*");
+      }
+      System.out.println();
+  }
 
   }
 }
