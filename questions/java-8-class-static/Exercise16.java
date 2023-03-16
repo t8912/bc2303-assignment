@@ -21,30 +21,30 @@ public class ClassA {
   
     // A Constructor for ClassA to print something here
 
-    static {
-        System.out.println("Something from static initialization block for SOME_NUMBER");
-    }
+   ///  {
+  ///      System.out.println("Something from static initialization block for SOME_NUMBER");
+  ///  }
   
-    {
-        System.out.println("Something from initialization block for someString");
-    }
+  ///  {
+  ///      System.out.println("Something from initialization block for someString");
+  ///  }
   
-    private static int initSomeNum() {
-        System.out.println("Something from initSomeNum method");
-        return 0;
-    }
+  ///  private static int initSomeNum() {
+  ///      System.out.println("Something from initSomeNum method");
+  ///      return 0;
+   /// }
   
-    private String initSomeString() {
-        System.out.println("Something from initSomeString method");
-        return "some string";
-    }
+  ///  private String initSomeString() {
+  ///      System.out.println("Something from initSomeString method");
+   ///     return "some string";
+  ///  }
   
-    public ClassA() {
-        System.out.println("Something from ClassA constructor");
-    }
+  ///  public ClassA() {
+   ///     System.out.println("Something from ClassA constructor");
+  ///  }
 
   
-  }
+/// }
   
 /*
  * ------ Output ------
