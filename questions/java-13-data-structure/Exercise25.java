@@ -106,6 +106,7 @@ class Exercise25 { // Linked List
         llist.append(4);
 
         System.out.println("Created Linked list is: ");
+        //System.out.println(llist.printList());
         llist.printList();
     }
 }
